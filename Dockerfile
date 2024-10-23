@@ -51,7 +51,7 @@ FROM ubuntu:20.04 AS build
 # Set non-interactive mode for installing packages
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install necessary packages: OpenJDK 11, Maven, and other utilities
+# Install necessary packages: OpenJDK 17, Maven, and other utilities
 RUN apt-get update && apt-get install -y \
     openjdk-11-jdk \
     maven \
@@ -61,7 +61,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set JAVA_HOME environment variable
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 # Set the working directory in the container
 WORKDIR /app
@@ -82,13 +82,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
+    openjdk-17-jdk \
     wget \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the Java environment variables
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 
 # Download and extract Tomcat (correcting the download and extraction paths)
