@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register for 09:30am DevOps with AWS, Azure, GCP, Mlops Real time training 2025 at Naresh-IT HYDERABAD </h1>
+    <h1>New user Register for 08:30pm DevOps with AWS, Azure, GCP, Mlops Real time training 2025 at Naresh-IT HYDERABAD classicsss</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
      
